@@ -47,7 +47,7 @@ public class PhoneListApp {
 
         System.out.println("\nThe number of phones in this set: "+phoneNd);
 
-        LinkedList phoneList = new LinkedList();
+        PhoneLinkedList phoneList = new PhoneLinkedList();
         phoneList.addToTail(t1);
         phoneList.addToTail(t2);
         phoneList.addToTail(t3);
