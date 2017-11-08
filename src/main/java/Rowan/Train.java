@@ -14,7 +14,11 @@ public class Train {
     int trainID;
     boolean trainAvailable;
     
-    public Train(){}
+    
+    public Train(){
+    
+    }
+    
     public Train(String model,int id,boolean avail){
     trainModel=model;
     trainID=id;

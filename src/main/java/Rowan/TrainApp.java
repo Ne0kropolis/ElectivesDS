@@ -32,6 +32,7 @@ public class TrainApp {
         trainAd.add(t3);
         trainAd.add(t4);
 
+        
         System.out.println("The number of trains: "+trainAd.size());
 
         Set trainNd = new HashSet();
