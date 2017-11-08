@@ -69,12 +69,12 @@ package za.ac.cput.InterestingSociety.Michael;
                 Node newNode = new Node(data);
                 Node curr = head;
 
-                        if (curr.nextLink == null || curr.data.getId() > data.getId()) {
+                        if (curr.nextLink == null || curr.data.getVin() > data.getVin()) {
                         newNode.nextLink = head;
                        return;
                     }
 
-                        while (curr.nextLink != null && curr.nextLink.data.getId() < data.getId()) {
+                        while (curr.nextLink != null && curr.nextLink.data.getVin() < data.getVin()) {
                         curr = curr.nextLink;
                     }
 
@@ -86,7 +86,7 @@ package za.ac.cput.InterestingSociety.Michael;
              public void print() {
                 Node temp = head;
                while (temp != null) {
-                        System.out.println(temp.data.getType() + " " + temp.data.getId() + " ");
+                        System.out.println(temp.data.getModel() + " " + temp.data.getVin() + " ");
                         temp = temp.nextLink;
                     }
             }
