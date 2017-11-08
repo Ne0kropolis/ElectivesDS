@@ -26,7 +26,7 @@ public class Main {
 
         othercars.addAll(cars);
 
-        LinkedList carList = new LinkedHashSet();
+        LinkedList carList = new LinkedList();
 
         carList.addToTail(car1);
         carList.addToTail(car2);
@@ -37,7 +37,8 @@ public class Main {
 
         System.out.println("The size of cars is "+cars.size());
         System.out.println("The size of othercars is "+othercars.size());
-        System.out.println("The carsList is "+carList.print());
+        System.out.println("The carsList is ");
+        carList.print();
 
 
     }

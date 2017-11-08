@@ -54,17 +54,14 @@ public class ListApp {
         
         System.out.println("HashSet: " + hPeople.toString() + "\n Size: " + hPeople.size());
         
-        DoublyLinkedList dlPeople = new DoublyLinkedList();
-        dlPeople.insertBefore(p1);
-        dlPeople.insertAfter(p2);
-        dlPeople.insertNth(p3, 1);
-        dlPeople.addAscending(p4);
-        dlPeople.insertAfter(p5);
+        LinkedList dlPeople = new LinkedList();
+        dlPeople.addtoTail(p1)
+        dlPeople.addtoTail(p2);
+        dlPeople.addToTail(p3);
+        dlPeople.addToTail(p4);
+        dlPeople.addtoTail(p5);
         
-        System.out.println("\nDoublyLinkedList\n\nForward:");
-        dlPeople.printForward();
-        System.out.println("\nBackward");
-        dlPeople.printBackward();
+        dlPeople.print();
        
     }
     

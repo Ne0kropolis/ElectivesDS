@@ -1,6 +1,6 @@
 package za.ac.cput.InterestingSociety.Michael;
 
-         +public class LinkedList {
+         public class LinkedList {
 
 
              private static class Node {
