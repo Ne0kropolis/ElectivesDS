@@ -70,12 +70,12 @@ public class LinkedList {
         Node newNode = new Node(data);
         Node curr = head;
 
-        if (curr.nextLink == null || curr.data.getId() > data.getId()) {
+        if (curr.nextLink == null || curr.data.getMacAddress() > data.getMacAddress()) {
             newNode.nextLink = head;
             return;
         }
 
-        while (curr.nextLink != null && curr.nextLink.data.getId() < data.getId()) {
+        while (curr.nextLink != null && curr.nextLink.data.getMacAddress() < data.getMacAddress()) {
             curr = curr.nextLink;
         }
 
