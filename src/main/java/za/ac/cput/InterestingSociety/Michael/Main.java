@@ -28,13 +28,16 @@ public class Main {
 
         LinkedList carList = new LinkedHashSet();
 
-        carList.add(cars);
+        carList.addToTail(car1);
+        carList.addToTail(car2);
+        carList.addToTail(car3);
+        carList.addToTail(car4);
 
 
 
         System.out.println("The size of cars is "+cars.size());
         System.out.println("The size of othercars is "+othercars.size());
-        System.out.println("The size of carsList is "+carList.print());
+        System.out.println("The carsList is "+carList.print());
 
 
     }
